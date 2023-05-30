@@ -1,4 +1,4 @@
 #Получите пользовательский ввод
 
 user_name = input("Ваше имя:")
-print("Привет, " + user_name +"!")
+print(f"Привет, {user_name}!")
