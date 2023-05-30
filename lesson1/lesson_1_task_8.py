@@ -1,7 +1,7 @@
 #Параметризация функций
 
 def numbers(num):
-    print(num)
+    print(num, end = ' ')
 
 #88005553535
 
