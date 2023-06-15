@@ -3,6 +3,7 @@ import turtle
 t = turtle.Turtle()
 t.speed(0)
 t.screen.setup(1200, 800)
+t.screen.bgcolor("#008000")
 
 def ring(col, rad):
 	t.fillcolor(col)
