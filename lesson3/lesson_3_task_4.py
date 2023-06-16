@@ -1,20 +1,20 @@
 import turtle
 
 t = turtle.Turtle()
-t.speed(0)
+t.speed(10)
 t.screen.setup(1200, 800)
 t.screen.bgcolor("#008000")
 
-def ring(col, rad):
-	t.fillcolor(col)
+def ring(color, radius):
+	t.fillcolor(color)
 	t.begin_fill()
-	t.circle(rad)
+	t.circle(radius)
 	t.end_fill()
 
 # рисуем первое ухо
 t.up()
 t.setpos(-40, 80)
-t.down
+t.down ()
 ring('brown', 20)
 
 # рисуем второе ухо
@@ -31,25 +31,25 @@ ring('brown', 40)
 
 # рисуем первый глаз
 t.up()
-t.setpos(-22, 70)
+t.setpos(-18, 70)
 t.down
-ring('black', 8)
+ring('black', 10)
 
 # рисуем второй глаз
 t.up()
-t.setpos(22, 70)
+t.setpos(18, 70)
 t.down()
-ring('black', 8)
+ring('black', 10)
 
 # рисуем зрачок
 t.up()
-t.setpos(-22, 73)
+t.setpos(-18, 73)
 t.down()
 ring('red', 4)
 
 # рисуем второй зрачок
 t.up()
-t.setpos(22, 73)
+t.setpos(18, 73)
 t.down()
 ring('red', 4)
 
@@ -57,21 +57,20 @@ ring('red', 4)
 t.up()
 t.setpos(0, 55)
 t.down
-ring('black', 5)
+ring('black', 7)
 
 # рисуем рот
 t.up()
 t.setpos(0, 55)
 t.down()
 t.right(90)
-t.circle(5, 180)
+t.circle(10, 180)
 t.up()
 t.setpos(0, 55)
 t.down()
 t.left(360)
-t.circle(5, -180)
-t.hideturtle()
+t.circle(10, -180)
 
+t.hideturtle()
 t.screen.exitonclick()
 t.screen.mainloop()
-t.ht()
