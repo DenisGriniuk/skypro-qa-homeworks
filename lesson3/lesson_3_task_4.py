@@ -1,4 +1,5 @@
 import turtle
+import time
 
 t = turtle.Turtle()
 t.speed(10)
@@ -63,11 +64,13 @@ ring('black', 7)
 t.up()
 t.setpos(0, 55)
 t.down()
+time.sleep(10)
 t.right(90)
 t.circle(10, 180)
 t.up()
 t.setpos(0, 55)
 t.down()
+time.sleep(10)
 t.left(360)
 t.circle(10, -180)
 
