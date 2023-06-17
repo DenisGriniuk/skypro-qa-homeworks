@@ -1,6 +1,6 @@
 from user import User
 
 my_user = User("Marta", "Green")
-my_user.sayFirstName()  
-my_user.sayLastName()   
-my_user.sayFullName()   
+my_user.say_first_name()  
+my_user.say_last_name()   
+my_user.say_full_name()   
