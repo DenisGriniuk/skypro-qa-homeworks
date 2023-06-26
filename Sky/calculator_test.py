@@ -3,6 +3,7 @@ from lesson4_calculator import Calculator
 
 calculator = Calculator()
 
+@pytest.mark.positive_test
 def test_sum_positive_nums():
     calculator = Calculator()
     res = calculator.sum(4, 5)
@@ -29,6 +30,7 @@ def test_sum_zero_nums():
     res = calculator.sum(10, 0)
     assert res == 10
 
+@pytest.mark.positive_test
 def test_div_positive():
     calculator = Calculator()
     res = calculator.div(10, 2)
@@ -46,6 +48,7 @@ def test_avg_empty_list():
     res = calculator.avg(numbers)
     assert res == 0
 
+@pytest.mark.positive_test
 def test_avg_positive():
     calculator = Calculator()
     numbers = [1,2,3,4,5,6,7,8,9,5]
