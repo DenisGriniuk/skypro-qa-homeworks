@@ -1,4 +1,18 @@
+1.test_capitilize
+(None, None),  # Негативный тест: проверка первой заглавной буквы в None
 FAILED lesson4/test_string_utils.py::test_capitilize[None-None] - AttributeError: 'NoneType' object has no attribute 'capitalize'
+В файле string_utils.py не совпадает название функции в строке 6 "def capitilize(self, string: str) -> str:" и строке 11 "return string.capitalize()"
+
+2.test_trim
+(None, None),  # Негативный тест: удаление пробелов в начале None
 FAILED lesson4/test_string_utils.py::test_trim[None-None] - AttributeError: 'NoneType' object has no attribute 'startswith'
+Объект не имеет атрибут 'startswith'
+
+3.test_to_list
+(" ", " ", [""]),  # Негативный тест: преобразование строки с пробелом в список
 FAILED lesson4/test_string_utils.py::test_to_list[ - -expected_output3] - AssertionError: assert [] == ['']
+
+4.test_is_empty
+(None, True),  # Негативный тест: проверка None
 FAILED lesson4/test_string_utils.py::test_is_empty[None-True] - AttributeError: 'NoneType' object has no attribute 'startswith'
+Объект не имеет атрибут 'startswith'
