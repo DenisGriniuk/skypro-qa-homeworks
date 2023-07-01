@@ -1,0 +1,4 @@
+FAILED lesson4/test_string_utils.py::test_capitilize[None-None] - AttributeError: 'NoneType' object has no attribute 'capitalize'
+FAILED lesson4/test_string_utils.py::test_trim[None-None] - AttributeError: 'NoneType' object has no attribute 'startswith'
+FAILED lesson4/test_string_utils.py::test_to_list[ - -expected_output3] - AssertionError: assert [] == ['']
+FAILED lesson4/test_string_utils.py::test_is_empty[None-True] - AttributeError: 'NoneType' object has no attribute 'startswith'
