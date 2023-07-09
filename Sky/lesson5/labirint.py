@@ -1,7 +1,7 @@
 
 
-# собрать все карточки товаров
-# вывести в консоль инфо: название + автор + цена
+
+
 
 
 from time import sleep
@@ -25,5 +25,25 @@ search_input = driver.find_element(By.CSS_SELECTOR, search_locator)
 # search_input.send_keys(Keys.RETURN)
 search_input.send_keys("Python", Keys.RETURN)
 
+# собрать все карточки товаров
+
+book_locator = "div.product"
+books = driver.find_elements(By.CSS_SELECTOR, book_locator)
+
+# print(len(books))
+
+# вывести в консоль инфо: название + автор + цена
+
+for book in books:
+    title = book.find_element(By.CSS_SELECTOR, 'span.product-title').text
+    price = book.find_element(By.CSS_SELECTOR, 'span.price-val').text
+
+    author = ''
+    try:
+         author = book.find_element(By.CSS_SELECTOR, 'div.product-author').text
+    except:
+         author = "Автор не указан"
+
+    print(author + "\t" + title + "\t" + price)
 
 sleep(5)
